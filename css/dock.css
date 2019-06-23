@@ -1,0 +1,47 @@
+.dialogBdy{
+	padding:5px;
+	text-align:center;
+}
+.pushdown{
+	padding-top:30%;
+}
+.ui-icon-mybackup:after {
+    background-image: url("../images/mybackup.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-myrestore:after {
+    background-image: url("../images/myrestore.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-myhome:after {
+    background-image: url("../images/myhome.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-mysetting:after {
+    background-image: url("../images/mysetting.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-mysetting-gray:after {
+    background-image: url("../images/mysetting_gray.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-myarrow-r:after {
+    background-image: url("../images/myarrow-r.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-circle:after {
+    background-image: url("../images/circle.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}
+.ui-icon-mycheck:after {
+    background-image: url("../images/mycheck_circle.png");
+    /* Make your icon fit */
+    background-size: 22px 22px;
+}

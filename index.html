@@ -1,1 +1,156 @@
-hello
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0038)http://m.beckietech.com/docking/test5/ -->
+<html manifest="offline.appcache" class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://m.beckietech.com/docking/test5/">--><base href=".">
+        <title>beckibox a</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-title" content="beckibox">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent" pr-status-bar-style="">
+		
+		<link rel="apple-touch-icon" href="http://m.beckietech.com/docking/test5/images/touch-icon-iphone.png">
+	
+		<link rel="icon" type="image/png" href="http://m.beckietech.com/docking/test5/images/favicon.png">
+        <link rel="shortcut icon" type="image/png" href="http://m.beckietech.com/docking/test5/images/favicon.png">
+        
+        <link type="text/css" rel="stylesheet" href="./css/b101.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/jquery.mobile.icons.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/jquery.mobile.structure-1.4.2.min.css">
+        
+        <!-- link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" /-->
+        <link type="text/css" rel="stylesheet" href="./css/jQMProgressBar-1.0.7.css">
+        <link type="text/css" rel="stylesheet" href="./css/add2home.css">
+        <link type="text/css" rel="stylesheet" href="./css/orientation.css">
+        <link type="text/css" rel="stylesheet" href="./css/dock.css">
+        <link type="text/css" rel="stylesheet" href="./css/iosOverlay.css">
+    <style type="text/css"></style></head>
+    <body class="ui-mobile-viewport ui-overlay-a">
+
+        
+        
+       
+       
+
+
+
+       <!-- page: settings page -->
+       
+       
+        <div data-role="page" id="setting_page" data-url="setting_page">
+            <!-- /header -->
+            <div data-role="header" data-theme="a">
+                <h1>beckibox</h1>
+                <div data-role="navbar">
+                	<ul>
+					<li><a href="http://m.beckietech.com/docking/test5/#" class="ui-nodisc-icon ui-btn ui-icon-mysetting-gray ui-btn-icon-left ui-state-disabled" data-role="button"><span lang="en">Engineering Settings</span></a></li>
+					</ul>
+				</div><!-- /navbar -->
+            </div>
+           
+            <!-- /content -->
+            <div data-role="content" data-theme="a">
+				
+				
+            	
+            	 
+            	 
+				<p><a id="wifi" href="http://m.beckietech.com/docking/test5/#wifi_page" data-role="button"><span lang="en">Wifi Connection</span></a></p> 
+            	 
+            	 
+            	
+            	
+            </div>
+            <!-- footer -->
+            <!-- div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                	<ul>
+                	<li><a id="home" href="#page_main" class="ui-nodisc-icon ui-btn ui-icon-myhome ui-btn-icon-top" data-role="button" ></a></li>
+                	</ul>
+                </div>
+            </div --><!-- /footer -->
+        </div><!-- end page -->
+
+
+		
+
+		
+		
+		<!-- page: wifi page -->
+        <!-- div data-role="page" id="wifi-dialog" data-url="wifi-dialog" -->
+		<div data-role="page" id="wifi_page" data-url="wifi_page">
+            <div data-role="header" data-theme="a">
+                 <h1><span lang="en">beckibox - Wifi Status</span></h1>
+            </div>
+            <!-- /header -->
+            <div data-role="header" data-theme="a">
+	            <h1>beckibox</h1>
+                <div data-role="navbar">
+                	<ul>
+					<li><a href="http://m.beckietech.com/docking/test5/#" class="ui-nodisc-icon ui-btn ui-btn-icon-left ui-state-disabled" data-role="button"><span lang="en">Set Wifi</span></a></li>
+					</ul>
+				</div><!-- /navbar -->             
+            </div>
+           <!-- /content -->
+		    <div data-role="content" data-theme="a">
+                <!-- div id="wifi_body" data-role="fieldcontain" class="ui-field-contain ui-body ui-br" -->
+                <div id="wifi_body">				
+               	</div>
+               	<div id="progressbar-wifi"></div>            	
+				<p><a id="wifi_ok_link" onclick="verifySsidPasscodeForWifiByIndex()" href="javascript:{}" data-role="button">OK</a></p>
+            	<p><a id="wifi_close_link" href="http://m.beckietech.com/docking/test5/#page_main" data-role="button">Cancel</a></p>
+            </div> 
+            <!-- footer -->
+             <div data-role="footer" data-position="fixed">
+			 <label id="wifi-progress-message"></label>	 
+             <!--   <div data-role="navbar">
+                	<ul>
+                	<li><a id="home" href="#page_main" class="ui-nodisc-icon ui-btn ui-icon-myhome ui-btn-icon-top" data-role="button" ></a></li>
+                	</ul>
+                </div> -->
+            </div>
+            <!-- /footer -->        
+        </div><!-- end page -->		   
+       
+        <div id="user_action" style="display:none"></div>
+        <div id="menustat" style="display:none">menustat=outofdate</div>
+        <div id="box_connect" style="display:none">connection=off</div>
+        <div id="disk_usage" style="display:none">diskusage=0</div>
+        
+        <div id="show_device"></div>
+        <div id="show_serverdone"></div>
+        
+        <!-- load javascript at the end of page load -->
+        <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.mobile.simpledialog2.js"></script>
+
+        <!--script type="text/javascript" src="js/jquery-lang.js"></script-->
+        <script type="text/javascript" src="./js/jquery-lang_coolbloke.js"></script>
+        <!-- script type="text/javascript" src="js/langpack/zh_tw.js"></script-->
+        <!-- script type="text/javascript" src="js/langpack/zh_cn.js"></script-->
+        <!-- script type="text/javascript" src="js/langpack/th.js"></script-->
+        <script type="text/javascript">
+        var lang = new Lang('en');
+        lang.dynamic('zh_tw', 'js/langpack/zh_tw.js');
+        lang.dynamic('zh_cn', 'js/langpack/zh_cn.js');
+        </script>
+        
+        <script type="text/javascript" src="./js/jQMProgressBar-1.0.7.js"></script>
+        <script type="text/javascript" src="./js/json2.js"></script>        
+        <script type="text/javascript" src="./js/pageInit.js"></script>
+        <script type="text/javascript" src="./js/action.js"></script>
+        <script type="text/javascript" src="./js/add2home.js"></script>
+        <script type="text/javascript" src="./js/testcase.js"></script>
+        <script type="text/javascript" src="./js/spin.min.js"></script>
+        <script type="text/javascript" src="./js/iosOverlay.js"></script>
+        <script type="text/javascript">
+        //force home screen webapp to reload
+        function updateSite(event) {
+			window.location.reload();
+        	window.applicationCache.swapCache();
+        }
+        window.applicationCache.addEventListener('updateready',updateSite, false);
+        </script>
+    
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div class="ui-ios-overlay ios-overlay-show"><div class="spinner" aria-role="progressbar" style="position: relative; width: 0px; z-index: 2000000000; left: 555px; top: 112px;"><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-0-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(0deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-1-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(27deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-2-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(55deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-3-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(83deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-4-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(110deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-5-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(138deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-6-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(166deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-7-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(193deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-8-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(221deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-9-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(249deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-10-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(276deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-11-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(304deg) translate(17px, 0px); border-radius: 2px;"></div></div><div style="position: absolute; top: -2px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-12-13;"><div style="position: absolute; width: 16px; height: 5px; background: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center; transform: rotate(332deg) translate(17px, 0px); border-radius: 2px;"></div></div></div></div></body></html>
